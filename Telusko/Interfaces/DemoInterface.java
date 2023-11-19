@@ -7,7 +7,12 @@ interface X extends A{
     void run();
 }
 
-class B implements X {
+interface Y extends A{
+    void runInY();
+}
+
+
+class B implements X,Y {
     public void show() {
         System.out.println("In Show");
     }
@@ -18,6 +23,12 @@ class B implements X {
 
     public void run() {
         System.out.println("In Run");
+    }
+
+    @Override
+    public void runInY() {
+                System.out.println("In Y Run");
+
     }
 }
 
@@ -32,5 +43,6 @@ public class DemoInterface {
         B obj1;
         obj1 = new B();
         obj1.run();
+        obj1.runInY();
     }
 }

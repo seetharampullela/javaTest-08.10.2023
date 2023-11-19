@@ -1,4 +1,4 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
         for(double rate = 7.5; rate<=10; rate += 0.25){
             double interestAmount = calculateInterese(rate, 10000);

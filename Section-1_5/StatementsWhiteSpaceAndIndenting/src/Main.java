@@ -11,7 +11,7 @@ public class Main {
                 " another" +
                 " still more.");
 
-        int anotherVariable = 50;
+        // int anotherVariable = 50;
         myVariable--;
         System.out.println("myVariable = " + myVariable);
     }
